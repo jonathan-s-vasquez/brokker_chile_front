@@ -1,0 +1,7 @@
+.image-container {
+  background-image: url(../../../../assets/images/house-1920_1309.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center-top;
+}

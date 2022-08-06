@@ -10,6 +10,7 @@ import { LoginComponent } from './views/login/login.component';
 import { StoreModule } from '@ngrx/store';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
+import { HomepageComponent } from './views/user/homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './components/layout/footer/footer.component';
     AdminComponent,
     LoginComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
