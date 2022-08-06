@@ -1,0 +1,17 @@
+.navigation {
+  transition: .3s all;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+header {
+  display: block;
+}

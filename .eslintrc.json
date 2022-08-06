@@ -1,0 +1,112 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "parserOptions": {
+        "project": [
+          "tsconfig.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "rules": {
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ],
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": [
+          "error"
+        ],
+        "func-names": 0,
+        "@typescript-eslint/no-inferrable-types": 0,
+        "no-useless-constructor": 0,
+        "no-empty-function": 0,
+        "import/no-unresolved": 0,
+        "no-undef": 0,
+        "@typescript-eslint/no-unused-vars": "error",
+        "no-underscore-dangle": 0,
+        "import/prefer-default-export": 0,
+        "padded-blocks": 0,
+        "class-methods-use-this": 0,
+        "eol-last": 0,
+        "max-len": [
+          "error",
+          {
+            "code": 200
+          }
+        ],
+        "linebreak-style": 0,
+        "lines-between-class-members": 0,
+        "object-curly-newline": 0,
+        "jsx-ally/anchor-is-valid": 0,
+        "no-plusplus": 0,
+        "import/order": 0,
+        "indent": [
+          "error",
+          2,
+          {
+            "SwitchCase": 1
+          }
+        ],
+        "brace-style": [
+          "error",
+          "stroustrup"
+        ],
+        "no-console": 0,
+        "import/extensions": 0,
+        "no-use-before-define": 0,
+        "array-callback-return": 0,
+        "no-trailing-spaces": 0,
+        "no-multi-spaces": 0,
+        "@typescript-eslint/indent": [
+          "error",
+          2
+        ],
+        "@typescript-eslint/brace-style": [
+          "error",
+          "stroustrup"
+        ],
+        "@typescript-eslint/no-explicit-any": 0
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
+      "rules": {}
+    },
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "plugin:@ngrx/recommended-requiring-type-checking"
+      ]
+    }
+  ]
+}
