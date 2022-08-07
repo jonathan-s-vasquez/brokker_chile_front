@@ -1,7 +1,33 @@
 .image-container {
-  background-image: url(../../../../assets/images/house-1920_1309.jpg);
+  background-image:
+      linear-gradient(rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
+      url(../../../../assets/images/house-1920_1309.jpg);
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
-  background-position: center-top;
+  background-position: center;
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.white-items {
+  color: white;
+}
+
+.logo-white {
+  filter: invert(100%) sepia(4%) saturate(7466%) hue-rotate(282deg) brightness(109%) contrast(101%);
+  height: 150px;
+}
+
+.presentation-text {
+  margin-top: 5vh;
+  width: 90%;
+  max-width: 900px;
+  font-size: xx-large;
 }

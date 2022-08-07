@@ -1,0 +1,139 @@
+.footer-container {
+  display: flex;
+  background-color: #222222;
+  justify-content: center;
+}
+
+.footer-container > * {
+  width: calc(100vw / 4);
+}
+
+.footer-container > *:nth-child(3) {
+  width: calc(100vw / 5);
+}
+.footer-container > *:nth-child(4) {
+  width: calc(100vw / 7);
+}
+@media (max-width: 1200px) {
+  .footer-container > *:nth-child(4) {
+    width: calc(100vw / 11);
+  }
+}
+
+.logo-white {
+  /* https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(100%) sepia(4%) saturate(7466%) hue-rotate(282deg) brightness(109%) contrast(101%);
+  height: 80px;
+}
+
+.logo-white-responsive {
+  /* https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(100%) sepia(4%) saturate(7466%) hue-rotate(282deg) brightness(109%) contrast(101%);
+  height: 80px;
+  background-image: url('../../../../assets/logos/brokker-chile-full.svg');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Small laptops */
+@media (max-width: 1024px) {
+  .logo-white-responsive {
+    background-image: url('../../../../assets/logos/brokker-chile-logo.svg');
+  }
+  .footer-container > *:nth-child(1) {
+    width: calc(100vw / 8);
+  }
+  .footer-container > *:nth-child(2) {
+    width: calc(100vw / 3);
+  }
+  .footer-container > *:nth-child(3) {
+    width: calc(100vw / 4);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container > *:nth-child(2) {
+    width: calc(100vw / 2.5);
+  }
+  .footer-container > *:nth-child(3) {
+    width: calc(100vw / 3.5);
+  }
+}
+
+.white-items {
+  color: white;
+}
+
+.white-items a {
+  color: white;
+}
+
+.white-items a:hover{
+  color: #016eff;
+  transition: 0.3s ease color ;
+}
+
+.flex-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.margin-between > div {
+  margin-bottom: 5px;
+}
+
+.margin-between > div:last-child {
+  margin-bottom: 0;
+}
+
+.icons-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.icon-background {
+  position: absolute;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.icon-background:hover {
+ background-color: white;
+}
+.icon-background:hover ~ .d-icon {
+  color: #016eff;
+  transition: 0.3s ease color ;
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+/* Ipads Tablets */
+@media (max-width: 768px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+/* Small laptops */
+@media (max-width: 1024px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+/* Desktops */
+@media (max-width: 1200px) {
+  .text {
+    font-size: 16px;
+  }
+}
