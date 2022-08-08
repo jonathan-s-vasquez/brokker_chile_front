@@ -19,17 +19,6 @@
   margin: 0.8em 0 0.8em 0;
 }
 
-.meet-us-text p {
-  color: white;
-  font-size: 30px;
-  line-height: 1em;
-}
-
-.meet-us-title {
-  color: white;
-  font-size: 67px;
-  margin-top: -20px;
-}
 
 .wp-button {
   border-left: 3px solid white;
@@ -45,11 +34,6 @@
   transition: .5s ease all;
 }
 
-.meet-us-image {
-  width: 50vw;
-  height: 100%;
-}
-
 .services {
   display: flex;
   flex-direction: column;
@@ -59,7 +43,7 @@
 
 .service-item {
   display: flex;
-  font-size: 30px;
+  font-size: min(max(1rem, 10vw), 23px);
   align-items: center;
   margin-bottom: 10px;
 }
@@ -68,6 +52,25 @@
   margin: 0 15px 0 30px;
   filter: invert(46%) sepia(93%) saturate(3500%) hue-rotate(174deg) brightness(88%) contrast(98%);
 }
+
+.meet-us-text p {
+  color: white;
+  font-size: min(max(1rem, 10vw), 23px);
+  line-height: 1em;
+}
+
+.meet-us-title {
+  color: white;
+  font-size: min(max(1rem, 10vw), 55px);
+  margin-top: -20px;
+}
+
+
+.meet-us-image {
+  width: 50vw;
+  height: 100%;
+}
+
 
 
 /* Desktops */
@@ -84,16 +87,16 @@
   }
 
   .meet-us-text p {
-    font-size: 25px;
+    font-size: min(max(1rem, 10vw), 19px);
+  }
+
+  .meet-us-title {
+    font-size: min(max(1rem, 10vw), 45px);
   }
 
   .wp-button {
     font-size: 2.5vw;
     padding: 13px;
-  }
-
-  .meet-us-title {
-    font-size: 48px;
   }
 
   .service-item>div {
@@ -107,24 +110,17 @@
     height: auto;
   }
 
-  .meet-us-text {
-    height: 400px;
-    min-height: 400px;
-    min-height: 400px;
-    padding: 0 3vw 0px 3vw;
+  .meet-us-text p {
+    font-size: min(max(1rem, 10vw), 19px);
   }
 
-  .meet-us-text p {
-    font-size: 20px;
+  .meet-us-title {
+    font-size: min(max(1rem, 10vw), 32px);
   }
 
   .wp-button {
     font-size: 20px;
     padding: 13px;
-  }
-
-  .meet-us-title {
-    font-size: 38px;
   }
 
   .service-item>div {
@@ -140,6 +136,12 @@
   .services-container {
     width: 50vw;
     height: 40vh;
+  }
+
+  .meet-us-text {
+    height: 50vh;
+    min-height: 50vh;
+    padding: 0 3vw 0px 3vw;
   }
 
   .meet-us-image {

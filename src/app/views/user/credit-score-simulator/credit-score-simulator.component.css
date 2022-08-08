@@ -1,4 +1,6 @@
-.component-container {}
+.component-container {
+  height: 80vh;
+}
 
 .component-container p {
   font-size: 20px;
