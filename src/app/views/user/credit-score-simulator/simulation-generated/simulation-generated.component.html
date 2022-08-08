@@ -1,0 +1,7 @@
+<div class="row container">
+  <h3 *ngIf="success">¡Simulación realizada con exito! Enviaremos los resultados a tu correo en unos momentos.</h3>
+  <div *ngIf="!success" class="custom-loader-container">
+    <img class="logo-loader" alt="" src="assets/logos/brokker-chile-logo.svg">
+    <span class="custom-loader"></span>
+  </div>
+</div>

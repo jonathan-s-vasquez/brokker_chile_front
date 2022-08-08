@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="xs-col-12-12 sm-col-12-12 md-col-8-12 lg-col-8-12 xl-col-8-12">
+    <label>Nombre completo</label>
+    <div class="input" style="width: 100%">
+      <input [formControl]="asFormControl(controlForm.controls.name)" type="text" />
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
+    <label>Rut</label>
+    <div class="input" style="width: 100%">
+      <input
+        [formControl]="asFormControl(controlForm.controls.rut)"
+        (keypress)="onRutInputKeyDown($event)"
+        (keyup)="onRutInputKeyUp()"
+        type="text"
+      />
+    </div>
+  </div>
+  <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
+    <label>Edad</label>
+    <div class="input" style="width: 100%">
+      <input [formControl]="asFormControl(controlForm.controls.age)" type="number" />
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
+    <label>Estado civil</label>
+    <div class="input" style="width: 100%">
+      <span class="d-icon d-arrowhead-down-solid select-arrow"></span>
+      <select name="cars" id="cars" [formControl]="asFormControl(controlForm.controls.maritalStatus)">
+        <option value="">Seleccione una opción</option>
+        <option value="Casado">Casado</option>
+        <option value="Soltero">Soltero</option>
+      </select>
+    </div>
+  </div>
+  <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
+    <label>Profesión u Oficio</label>
+    <div class="input" style="width: 100%">
+      <input [formControl]="asFormControl(controlForm.controls.job)" type="text" />
+    </div>
+  </div>
+</div>

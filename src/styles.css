@@ -1,7 +1,10 @@
 :root {
   --footer-height: 100px;
+  --color-steps: #016eff;
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   overflow-x: hidden;
   margin: 0;
@@ -29,6 +32,23 @@ footer {
   height: var(--footer-height)
 }
 
+.invisible {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.visible {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.t-1-all {
+  transition: 1s ease all;
+}
+
+.t-2-all {
+  transition: 2s ease all;
+}
 /* Bootstrap margins and paddings */
 
 .m-0 {

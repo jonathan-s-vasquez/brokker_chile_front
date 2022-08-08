@@ -1,0 +1,75 @@
+.image-container {
+  background-image:
+      linear-gradient(rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
+      url(../../../../../assets/images/house-1920_1309.jpg);
+  width: 100vw;
+  height: 100vh;
+  max-height: 992px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.white-items {
+  color: white;
+}
+
+.logo-white {
+  filter: invert(100%) sepia(4%) saturate(7466%) hue-rotate(282deg) brightness(109%) contrast(101%);
+  height: 150px;
+}
+
+.presentation-text {
+  margin-top: 5vh;
+  width: 90%;
+  max-width: 900px;
+  font-size: 32px;
+}
+
+/* Desktops */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .logo-white {
+    height: 130px;
+  }
+  .presentation-text {
+    font-size: 28px;
+  }
+}
+
+/* Small laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .logo-white {
+    height: 120px;
+  }
+  .presentation-text {
+    font-size: 24px;
+  }
+}
+
+/* Ipads Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .logo-white {
+    height: 110px;
+  }
+  .presentation-text {
+    font-size: 22px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .logo-white {
+    height: 90px;
+    padding: 0 15px 0 15px;
+  }
+  .presentation-text {
+    font-size: 20px;
+  }
+}

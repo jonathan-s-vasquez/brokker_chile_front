@@ -1,0 +1,16 @@
+.credit-button:hover {
+  box-shadow: 0px 5px 15px 5px #398af38e;
+  transition: 0.5s ease all;
+  color: #398af3;
+  cursor: pointer;
+}
+
+.credit-button:hover h3 {
+  color: #398af3;
+  transition: 0.5s ease all;
+}
+
+.credit-button ::ng-deep .svg-icon {
+  width: 5vh;
+  height: 5vh;
+}

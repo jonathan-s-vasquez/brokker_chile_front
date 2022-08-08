@@ -1,0 +1,65 @@
+.container {
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.loader-container {
+  min-width: 200px;
+  width: 33.33%;
+  height: 360px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  cursor: pointer;
+  transition: .2s linear;
+}
+
+.logo-loader {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  z-index: 2;
+  filter: invert(32%) sepia(98%) saturate(4092%) hue-rotate(207deg) brightness(102%) contrast(106%);
+  margin: 7px
+}
+
+.custom-loader {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(0deg, #016eff33 33%, #016eff 100%);
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.custom-loader::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: white;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}

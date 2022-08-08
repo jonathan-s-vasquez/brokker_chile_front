@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
+    <label>Plazo del contrato</label>
+    <div class="input" style="width: 100%">
+      <span class="d-icon d-arrowhead-down-solid select-arrow"></span>
+      <select name="cars" id="cars" [formControl]="asFormControl(controlForm.controls.contractPeriod)">
+        <option value="">Seleccione una opción</option>
+        <option value="Fijo">Fijo</option>
+        <option value="Indefinido">Indefinido</option>
+      </select>
+    </div>
+  </div>
+  <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
+    <label>Renta</label>
+    <div class="input" style="width: 100%">
+      <input [formControl]="asFormControl(controlForm.controls.wageIncome)" type="number" />
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
+    <label>Antiguedad</label>
+    <div class="input" style="width: 100%">
+      <input [formControl]="asFormControl(controlForm.controls.laborOldQuantity)" type="number" />
+    </div>
+  </div>
+  <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
+    <label class="invisible">&nbsp;</label>
+    <div class="input" style="width: 100%">
+      <select name="cars" id="cars" [formControl]="asFormControl(controlForm.controls.laborOldSufix)">
+        <option value="">Seleccione una opción</option>
+        <option value="Años">Años</option>
+        <option value="Meses">Meses</option>
+      </select>
+    </div>
+  </div>
+</div>

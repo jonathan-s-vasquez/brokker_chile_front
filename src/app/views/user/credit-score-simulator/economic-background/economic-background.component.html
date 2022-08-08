@@ -1,0 +1,75 @@
+<div class="row">
+  <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
+    <label>Patrimonio inmobiliario</label>
+    <div class="input" style="width: 100%">
+      <input
+        [formControl]="asFormControl(controlForm.controls.realStateHeritage)"
+        type="text"
+      />
+    </div>
+  </div>
+  <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
+    <label>Patrimonio mobiliario / Vehiculos</label>
+    <div class="input" style="width: 100%">
+      <input [formControl]="asFormControl(controlForm.controls.furnitureHeritage)" type="text" />
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
+    <label>Deudas a corto plazo</label>
+    <div class="input" style="width: 100%">
+      <input
+        [formControl]="asFormControl(controlForm.controls.shorTermsDebts)"
+        type="text"
+      />
+    </div>
+  </div>
+  <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
+    <label>Deudas a largo plazo</label>
+    <div class="input" style="width: 100%">
+      <input [formControl]="asFormControl(controlForm.controls.longTermsDebts)" type="text" />
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
+    <label>Morosidad reciente</label>
+    <div class="input" style="width: 100%">
+      <input
+        [formControl]="asFormControl(controlForm.controls.recentDeliquency)"
+        type="text"
+      />
+    </div>
+  </div>
+  <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
+    <label>Complementa renta</label>
+    <div class="input" style="width: 100%">
+      <span class="d-icon d-arrowhead-down-solid select-arrow"></span>
+      <select name="cars" id="cars" [formControl]="asFormControl(controlForm.controls.wageIncomeComplement)">
+        <option value="">Seleccione una opción</option>
+        <option value="Casado">Si</option>
+        <option value="Soltero">No</option>
+      </select>
+    </div>
+  </div>
+</div>
+<!-- <div class="row">
+  <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
+    <label>Estado civil</label>
+    <div class="input" style="width: 100%">
+      <span class="d-icon d-arrowhead-down-solid select-arrow"></span>
+      <select name="cars" id="cars" [formControl]="asFormControl(controlForm.controls.maritalStatus)">
+        <option value="">Seleccione una opción</option>
+        <option value="Casado">Casado</option>
+        <option value="Soltero">Soltero</option>
+      </select>
+    </div>
+  </div>
+  <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
+    <label>Profesión u Oficio</label>
+    <div class="input" style="width: 100%">
+      <input [formControl]="asFormControl(controlForm.controls.job)" type="text" />
+    </div>
+  </div>
+</div> -->

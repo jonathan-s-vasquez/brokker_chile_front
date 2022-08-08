@@ -1,0 +1,151 @@
+.meet-us-container {
+  width: 100vw;
+  height: 580px;
+  display: flex;
+  align-items: center;
+}
+
+.meet-us-text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 5vw 0px 5vw;
+  background-color: #0287C8;
+  color: white;
+}
+
+.separation {
+  margin: 0.8em 0 0.8em 0;
+}
+
+.meet-us-text p {
+  color: white;
+  font-size: 30px;
+  line-height: 1em;
+}
+
+.meet-us-title {
+  color: white;
+  font-size: 67px;
+  margin-top: -20px;
+}
+
+.wp-button {
+  border-left: 3px solid white;
+  color: white;
+  background-color: #0170B9;
+  padding: 20px;
+  transition: .5s ease all;
+}
+
+.wp-button:hover {
+  color: #0170B9;
+  background-color: white;
+  transition: .5s ease all;
+}
+
+.meet-us-image {
+  width: 50vw;
+  height: 100%;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.service-item {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.service-item img {
+  margin: 0 15px 0 30px;
+  filter: invert(46%) sepia(93%) saturate(3500%) hue-rotate(174deg) brightness(88%) contrast(98%);
+}
+
+
+/* Desktops */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .wp-button {
+    font-size: 25px;
+    padding: 17px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .meet-us-text {
+    padding: 0 5vw 0px 5vw;
+  }
+
+  .meet-us-text p {
+    font-size: 25px;
+  }
+
+  .wp-button {
+    font-size: 2.5vw;
+    padding: 13px;
+  }
+
+  .meet-us-title {
+    font-size: 48px;
+  }
+
+  .service-item>div {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .meet-us-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .meet-us-text {
+    height: 400px;
+    min-height: 400px;
+    min-height: 400px;
+    padding: 0 3vw 0px 3vw;
+  }
+
+  .meet-us-text p {
+    font-size: 20px;
+  }
+
+  .wp-button {
+    font-size: 20px;
+    padding: 13px;
+  }
+
+  .meet-us-title {
+    font-size: 38px;
+  }
+
+  .service-item>div {
+    font-size: calc(11px + 2vw);
+  }
+
+  .service-item>img {
+    height: 9vw;
+    max-height: 50px;
+    margin: 0 2vw 0 3vw;
+  }
+
+  .services-container {
+    width: 50vw;
+    height: 40vh;
+  }
+
+  .meet-us-image {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

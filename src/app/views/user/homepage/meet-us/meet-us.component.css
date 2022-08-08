@@ -1,0 +1,82 @@
+
+
+.meet-us-container {
+  width: 100vw;
+  height: 75vh;
+  max-height: 744;
+  display: flex;
+  align-items: center;
+}
+
+.meet-us-text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 620px;
+  padding: 0 5vw 0px 5vw;
+}
+
+.meet-us-text p {
+  font-size: 30px;
+  line-height: 1em;
+}
+
+.meet-us-title {
+  color: #1976d2;
+  font-size: 67px;
+  margin-top: -20px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .meet-us-text {
+    padding: 0 5vw 0px 5vw;
+  }
+  .meet-us-text p {
+    font-size: 25px;
+  }
+  .meet-us-title {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .meet-us-text {
+    padding: 0 3vw 0px 3vw;
+  }
+  .meet-us-text p {
+    font-size: 20px;
+  }
+  .meet-us-title {
+    font-size: 38px;
+  }
+}
+
+
+
+.meet-us-image {
+  width: 720px;
+  max-width: 50vw;
+  height: 620px;
+  background-image: url(../../../../../assets/images/agreement.png);
+  background-repeat: no-repeat;
+}
+
+/* Desktops */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .meet-us-image {
+    max-width: 40vw;
+  }
+}
+
+/* Small laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .meet-us-image {
+    max-width: 35vw;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .meet-us-image {
+    max-width: 30vw;
+  }
+}

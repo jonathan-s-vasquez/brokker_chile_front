@@ -1,0 +1,70 @@
+<app-section-title title="Simulador de credito" image="assets/images/credit-calculator.jpg"></app-section-title>
+
+<div class="container component-container">
+  <div class="row justify-content-center">
+    <div class="steps-container">
+      <h2 class="py-5">Simula un credito en multiples entidades bancarias</h2>
+      <p class="pb-3">Ingrese sus datos en el siguiente formulario.</p>
+      <div class="steps-and-form">
+        <div class="steps-ol-container">
+          <ol class="steps py-5">
+            <li *ngFor="let stepName of steps; index as i" [attr.data-step]="i + 1" class="step" [ngClass]="{
+                'is-active':  this.currentStep === i + 1,
+                'is-complete': this.currentStep > i + 1
+              }">
+              <span class="step-title">{{stepName}}</span>
+            </li>
+          </ol>
+        </div>
+        <div class="container-of-sliders">
+          <div class="sliders-container">
+            <div class="sliders"
+              [attr.style]=" 'width: calc(100% * '+ slidersQuantity+'); transform: translateX' + '( calc( (100% / -'+slidersQuantity+') *' + (this.currentStep - 1) + '))' ">
+              <div class="slider">
+                <app-credit-type (selectCreditType)="selectCreditType($event)" style="width: 100%"></app-credit-type>
+              </div>
+              <div class="slider">
+                <app-personal-information [controlForm]="asFormGroup(this.formControl.controls.personnalInformation)">
+                </app-personal-information>
+              </div>
+              <div class="slider">
+                <app-work-information [controlForm]="asFormGroup(this.formControl.controls.workInformation)">
+                </app-work-information>
+              </div>
+              <div class="slider">
+                <app-economic-background [controlForm]="asFormGroup(this.formControl.controls.economicBackground)">
+                </app-economic-background>
+              </div>
+              <div class="slider">
+                <app-simulator-results [formControlEmail]="asFormControl(this.formControl.controls.email)"></app-simulator-results>
+              </div>
+              <div class="slider">
+                <app-simulation-generated [iAmVisible]="this.currentStep === 6"></app-simulation-generated>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-navigation" >
+          <button class="button is-outline"
+            [ngClass]="[1, 5, 6].includes(this.currentStep) ? 'invisible t-1-all' : 'visible t-1-all'"
+            (click)="returnOneStep()"> Volver </button>
+
+          <button
+          class="button is-solid"
+          style="position: absolute;"
+          [ngClass]="this.currentStep !== 5 ? 'invisible t-1-all' : 'visible t-1-all'"
+          [attr.disabled]="this.formControl.controls.email.valid ? null : true"
+          (click)="forwardOneStep()"> Solicitar simulación </button>
+          <button
+            class="button is-solid"
+            [ngClass]="[1, 5, 6].includes(this.currentStep) ? 'invisible t-1-all' : 'visible t-1-all'"
+            [attr.disabled]="shouldActivateNextButton ? null : true"
+            (click)="forwardOneStep()"
+          > Siguiente </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
