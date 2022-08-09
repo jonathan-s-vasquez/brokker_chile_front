@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -19,17 +20,21 @@ body::after {
   height: var(--footer-height)
 }
 
-body {
-  min-height: 100vh;
-  margin: 0;
-  position: relative;
-}
-
 footer {
   position:absolute;
   bottom:0;
   width:100vw;
   height: var(--footer-height)
+}
+
+/* Ipads Tablets */
+@media (max-width: 768px) {
+  body::after {
+    height: var(--footer-height)
+  }
+  footer {
+    height: calc(var(--footer-height) * 1.5)
+  }
 }
 
 .invisible {

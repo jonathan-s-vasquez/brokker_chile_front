@@ -4,18 +4,20 @@
   justify-content: center;
 }
 
-.footer-container > * {
+.footer-container>* {
   width: calc(100vw / 4);
 }
 
-.footer-container > *:nth-child(3) {
+.footer-container>*:nth-child(3) {
   width: calc(100vw / 5);
 }
-.footer-container > *:nth-child(4) {
+
+.footer-container>*:nth-child(4) {
   width: calc(100vw / 7);
 }
+
 @media (max-width: 1200px) {
-  .footer-container > *:nth-child(4) {
+  .footer-container>*:nth-child(4) {
     width: calc(100vw / 11);
   }
 }
@@ -42,22 +44,26 @@
   .logo-white-responsive {
     background-image: url('../../../../assets/logos/brokker-chile-logo.svg');
   }
-  .footer-container > *:nth-child(1) {
+
+  .footer-container>*:nth-child(1) {
     width: calc(100vw / 8);
   }
-  .footer-container > *:nth-child(2) {
+
+  .footer-container>*:nth-child(2) {
     width: calc(100vw / 3);
   }
-  .footer-container > *:nth-child(3) {
+
+  .footer-container>*:nth-child(3) {
     width: calc(100vw / 4);
   }
 }
 
 @media (max-width: 768px) {
-  .footer-container > *:nth-child(2) {
+  .footer-container>*:nth-child(2) {
     width: calc(100vw / 2.5);
   }
-  .footer-container > *:nth-child(3) {
+
+  .footer-container>*:nth-child(3) {
     width: calc(100vw / 3.5);
   }
 }
@@ -70,23 +76,15 @@
   color: white;
 }
 
-.white-items a:hover{
+.white-items a:hover {
   color: #016eff;
-  transition: 0.3s ease color ;
+  transition: 0.3s ease color;
 }
 
 .flex-centered {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.margin-between > div {
-  margin-bottom: 5px;
-}
-
-.margin-between > div:last-child {
-  margin-bottom: 0;
 }
 
 .icons-layout {
@@ -102,38 +100,34 @@
   width: 30px;
   height: 30px;
 }
+
 .icon-background:hover {
- background-color: white;
+  background-color: white;
 }
-.icon-background:hover ~ .d-icon {
+
+.icon-background:hover~.d-icon {
   color: #016eff;
-  transition: 0.3s ease color ;
+  transition: 0.3s ease color;
 }
 
-/* Mobile devices */
-@media (max-width: 480px) {
-  .text {
-    font-size: 16px;
-  }
+.footer-background-black {
+  background-color: #222222;
 }
 
-/* Ipads Tablets */
-@media (max-width: 768px) {
-  .text {
-    font-size: 16px;
-  }
+.min-width-200 {
+  min-width: 200px;
+  width: 100%;
 }
 
-/* Small laptops */
-@media (max-width: 1024px) {
-  .text {
-    font-size: 16px;
-  }
+.min-width-80 {
+  min-width: 80px;
 }
 
-/* Desktops */
-@media (max-width: 1200px) {
-  .text {
-    font-size: 16px;
-  }
+.icons-layout .d-icon {
+  width: 24px;
+}
+.icons-layout .d-icon::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
