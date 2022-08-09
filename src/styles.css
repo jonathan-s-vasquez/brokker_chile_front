@@ -30,7 +30,7 @@ footer {
 /* Ipads Tablets */
 @media (max-width: 768px) {
   body::after {
-    height: var(--footer-height)
+    height: calc(var(--footer-height) * 1.5)
   }
   footer {
     height: calc(var(--footer-height) * 1.5)

@@ -15,5 +15,6 @@
   color: white;
   /* font-size: min(max(1rem, [hasta-donde-mantiene-full-size]), [full-size]); */
   font-size: min(max(1rem, 10vw), 42px);
+  max-width: 90vw;
   text-align: center;
 }

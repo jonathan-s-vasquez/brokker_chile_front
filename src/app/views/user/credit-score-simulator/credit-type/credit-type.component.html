@@ -1,10 +1,20 @@
-<div class="flex space-around">
-  <button type="button" class="box credit-button" (click)="selectCreditType.emit('Consumo')">
-    <app-money-multiple></app-money-multiple>
-    <h3>Credito de consumo</h3>
-  </button>
-  <button type="button" class="box credit-button" (click)="selectCreditType.emit('Hipotecario')">
-    <app-home-plus></app-home-plus>
-    <h3>Credito hipotecario</h3>
-  </button>
+<div class="row flex align-items-center justify-content-center">
+
+  <div class="col-1-2 min-width-300">
+    <div class="flex align-items-center justify-content-center mt-5">
+      <button type="button" class="box credit-button" (click)="selectCreditType.emit('Consumo')">
+        <app-money-multiple></app-money-multiple>
+        <h3>Credito de consumo</h3>
+      </button>
+    </div>
+  </div>
+
+  <div class="col-1-2 min-width-300">
+    <div class="flex align-items-center justify-content-center mt-5">
+      <button type="button" class="box credit-button" (click)="selectCreditType.emit('Hipotecario')">
+        <app-home-plus></app-home-plus>
+        <h3>Credito Hipotecario</h3>
+      </button>
+    </div>
+  </div>
 </div>

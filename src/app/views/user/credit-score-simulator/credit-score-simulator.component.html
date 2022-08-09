@@ -47,22 +47,33 @@
           </div>
         </div>
         <div class="bottom-navigation" >
-          <button class="button is-outline"
-            [ngClass]="[1, 5, 6].includes(this.currentStep) ? 'invisible t-1-all' : 'visible t-1-all'"
-            (click)="returnOneStep()"> Volver </button>
+          <button
+            class="button is-outline"
+            [ngClass]="[1, 6].includes(this.currentStep) ? 'invisible t-1-all' : 'visible t-1-all'"
+            (click)="returnOneStep()"
+          >
+            Volver
+          </button>
 
-          <button
-          class="button is-solid"
-          style="position: absolute;"
-          [ngClass]="this.currentStep !== 5 ? 'invisible t-1-all' : 'visible t-1-all'"
-          [attr.disabled]="this.formControl.controls.email.valid ? null : true"
-          (click)="forwardOneStep()"> Solicitar simulación </button>
-          <button
-            class="button is-solid"
-            [ngClass]="[1, 5, 6].includes(this.currentStep) ? 'invisible t-1-all' : 'visible t-1-all'"
-            [attr.disabled]="shouldActivateNextButton ? null : true"
-            (click)="forwardOneStep()"
-          > Siguiente </button>
+          <div>
+            <button
+              class="button is-solid"
+              style="position: absolute;"
+              [attr.disabled]="this.formControl.controls.email.valid ? null : true"
+              [ngClass]="this.currentStep !== 5 ? 'invisible t-1-all' : 'visible t-1-all'"
+              (click)="forwardOneStep()"
+            >
+              Solicitar simulación
+            </button>
+            <button
+              class="button is-solid"
+              [ngClass]="[1, 5, 6].includes(this.currentStep) ? 'invisible t-1-all' : 'visible t-1-all'"
+              [attr.disabled]="shouldActivateNextButton ? null : true"
+              (click)="forwardOneStep()"
+            >
+              Siguiente
+            </button>
+          </div>
         </div>
       </div>
     </div>
