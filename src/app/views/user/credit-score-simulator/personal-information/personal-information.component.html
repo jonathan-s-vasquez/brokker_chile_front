@@ -27,15 +27,12 @@
 </div>
 <div class="row">
   <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
-    <label>Estado civil</label>
-    <div class="input" style="width: 100%">
-      <span class="d-icon d-arrowhead-down-solid select-arrow"></span>
-      <select name="cars" id="cars" [formControl]="asFormControl(controlForm.controls.maritalStatus)">
-        <option value="">Seleccione una opción</option>
-        <option value="Casado">Casado</option>
-        <option value="Soltero">Soltero</option>
-      </select>
-    </div>
+    <app-select
+      label="Estado civil"
+      [controlForm]="asFormControl(controlForm.controls.maritalStatus)"
+      [items]="maritalStatusList"
+    >
+    </app-select>
   </div>
   <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
     <label>Profesión u Oficio</label>

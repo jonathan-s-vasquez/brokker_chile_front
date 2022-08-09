@@ -1,14 +1,11 @@
 <div class="row">
   <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
-    <label>Plazo del contrato</label>
-    <div class="input" style="width: 100%">
-      <span class="d-icon d-arrowhead-down-solid select-arrow"></span>
-      <select name="cars" id="cars" [formControl]="asFormControl(controlForm.controls.contractPeriod)">
-        <option value="">Seleccione una opción</option>
-        <option value="Fijo">Fijo</option>
-        <option value="Indefinido">Indefinido</option>
-      </select>
-    </div>
+    <app-select
+      label="Plazo del contrato"
+      [controlForm]="asFormControl(controlForm.controls.contractPeriod)"
+      [items]="contractPeriodList"
+    >
+    </app-select>
   </div>
   <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
     <label>Renta</label>
@@ -25,13 +22,11 @@
     </div>
   </div>
   <div class="xs-col-12-12 sm-col-6-12 md-col-4-12 lg-col-4-12 xl-col-4-12">
-    <label class="invisible">&nbsp;</label>
-    <div class="input" style="width: 100%">
-      <select name="cars" id="cars" [formControl]="asFormControl(controlForm.controls.laborOldSufix)">
-        <option value="">Seleccione una opción</option>
-        <option value="Años">Años</option>
-        <option value="Meses">Meses</option>
-      </select>
-    </div>
+    <app-select
+      label=""
+      [controlForm]="asFormControl(controlForm.controls.laborOldSufix)"
+      [items]="laborOldSufixList"
+    >
+    </app-select>
   </div>
 </div>

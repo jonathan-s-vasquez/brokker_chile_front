@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, Validators } from '@angular/forms';
+import { SelectItem } from 'src/app/components/inputs/select/select.interface';
 
 @Component({
   selector: 'app-economic-background',
@@ -16,6 +17,17 @@ export class EconomicBackgroundComponent implements OnInit {
     recentDeliquency: new FormControl('', [Validators.required]),
     wageIncomeComplement: new FormControl('', [Validators.required]),
   });
+
+  wageIncomeComplementList: SelectItem[] = [
+    {
+      text: 'Si',
+      value: 'Si',
+    },
+    {
+      text: 'No',
+      value: 'No',
+    },
+  ];
 
   constructor() { }
 

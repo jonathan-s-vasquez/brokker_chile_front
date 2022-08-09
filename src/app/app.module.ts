@@ -26,6 +26,7 @@ import { WorkInformationComponent } from './views/user/credit-score-simulator/wo
 import { EconomicBackgroundComponent } from './views/user/credit-score-simulator/economic-background/economic-background.component';
 import { SimulatorResultsComponent } from './views/user/credit-score-simulator/simulator-results/simulator-results.component';
 import { SimulationGeneratedComponent } from './views/user/credit-score-simulator/simulation-generated/simulation-generated.component';
+import { SelectComponent } from './components/inputs/select/select.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { SimulationGeneratedComponent } from './views/user/credit-score-simulato
     EconomicBackgroundComponent,
     SimulatorResultsComponent,
     SimulationGeneratedComponent,
+    SelectComponent,
   ],
   imports: [
     BrowserModule,

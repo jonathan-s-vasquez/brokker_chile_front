@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, Validators } from '@angular/forms';
+import { SelectItem } from 'src/app/components/inputs/select/select.interface';
 
 @Component({
   selector: 'app-work-information',
@@ -14,6 +15,27 @@ export class WorkInformationComponent implements OnInit {
     laborOldQuantity: new FormControl('', [Validators.required]),
     laborOldSufix: new FormControl('', [Validators.required]),
   });
+
+  contractPeriodList: SelectItem[] = [
+    {
+      text: 'Fijo',
+      value: 'Fijo',
+    },
+    {
+      text: 'Indefinido',
+      value: 'Indefinido',
+    },
+  ];
+  laborOldSufixList: SelectItem[] = [
+    {
+      text: 'Años',
+      value: 'Años',
+    },
+    {
+      text: 'Meses',
+      value: 'Meses',
+    },
+  ];
 
   constructor() { }
 

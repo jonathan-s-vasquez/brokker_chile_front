@@ -1,0 +1,8 @@
+.select-arrow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 6px;
+  transform: scaleX(0.8);
+  color: darkgray;
+}

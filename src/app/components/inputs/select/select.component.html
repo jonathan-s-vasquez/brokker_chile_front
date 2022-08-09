@@ -1,0 +1,9 @@
+<label *ngIf="label">{{label}}</label>
+<label *ngIf="!label" class="invisible">&nbsp;</label>
+<div class="input" style="width: 100%">
+  <span class="d-icon d-arrowhead-down-solid select-arrow"></span>
+  <select name="cars" id="cars" [formControl]="controlForm">
+    <option value="">Seleccione una opción</option>
+    <option *ngFor="let item of items" [value]="item.value">{{item.text}}</option>
+  </select>
+</div>

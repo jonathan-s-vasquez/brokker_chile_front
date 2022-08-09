@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, Validators } from '@angular/forms';
+import { SelectItem } from 'src/app/components/inputs/select/select.interface';
 
 @Component({
   selector: 'app-personal-information',
@@ -15,6 +16,17 @@ export class PersonalInformationComponent implements OnInit {
     maritalStatus: new FormControl('', [Validators.required]),
     job: new FormControl('', [Validators.required]),
   });
+
+  maritalStatusList: SelectItem[] = [
+    {
+      text: 'Casado',
+      value: 'Casado',
+    },
+    {
+      text: 'Soltero',
+      value: 'Soltero',
+    },
+  ];
 
   constructor() { }
 

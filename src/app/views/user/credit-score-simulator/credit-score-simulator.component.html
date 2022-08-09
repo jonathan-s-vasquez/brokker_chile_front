@@ -18,8 +18,10 @@
         </div>
         <div class="container-of-sliders">
           <div class="sliders-container">
-            <div class="sliders"
-              [attr.style]=" 'width: calc(100% * '+ slidersQuantity+'); transform: translateX' + '( calc( (100% / -'+slidersQuantity+') *' + (this.currentStep - 1) + '))' ">
+            <div
+              class="sliders"
+              [attr.style]=" 'width: calc(100% * '+ slidersQuantity+'); transform: translateX' + '( calc( (100% / -'+slidersQuantity+') *' + (this.currentStep - 1) + '))' "
+            >
               <div class="slider">
                 <app-credit-type (selectCreditType)="selectCreditType($event)" style="width: 100%"></app-credit-type>
               </div>
