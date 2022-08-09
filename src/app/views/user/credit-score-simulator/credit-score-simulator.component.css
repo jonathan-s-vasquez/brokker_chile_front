@@ -195,11 +195,11 @@ h1 {
 }
 
 @media (min-width: 0px) and (max-width: 768px) {
-  .step > span {
+  .step  span {
     opacity: 0;
     visibility: hidden;
   }
-  .is-active > span {
+  .is-active  span {
     opacity: 1 !important;
     visibility: visible !important;
   }
