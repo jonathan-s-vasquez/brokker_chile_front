@@ -4,7 +4,7 @@ import { AbstractControl, FormControl, FormGroup, Validators } from '@angular/fo
 @Component({
   selector: 'app-credit-score-simulator',
   templateUrl: './credit-score-simulator.component.html',
-  styleUrls: ['./credit-score-simulator.component.css'],
+  styleUrls: ['./credit-score-simulator.component.css', './credit-score-simulator.slider.css', './credit-score-simulator.steps.css'],
 })
 export class CreditScoreSimulatorComponent implements OnInit {
 
